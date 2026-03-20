@@ -1,0 +1,19 @@
+{
+    "browserlist" : {
+        "autoprefixer": "last 2 versions, not IE 9"
+    },
+    "paths" : {
+      "js": "./assets/js",
+      "css": "./assets/css",
+      "img": "./assets/img",
+      "imgsrc": "./src/img",
+      "sass": "./assets/sass",
+      "node": "./node_modules/",
+      "bower": "./bower_components/",
+      "dev": "./src",
+      "dist": "./dist",
+      "distprod": "./dist-product",
+      "vendor": ""
+    }
+  }
+  

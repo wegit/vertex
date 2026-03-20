@@ -1,0 +1,81 @@
+.fusion-footer {
+    a {
+        color: #c6c6c6;
+        text-decoration: underline;
+    }
+
+    .fusion-text {
+        p {
+            font-weight: 500 !important;
+            margin-bottom: 0;
+        }
+    }
+
+    .form-footer {
+        justify-content: center;
+
+        .fusion-column-wrapper {
+            max-width: 950px;
+        }
+    }
+
+    a {
+        &:hover {
+            color: var(--wp--preset--color--awb-color-4);
+        }
+    }
+
+    .fusion-image-element {
+        display: contents;
+        .fusion-imageframe {
+            @media screen and (max-width: 1024px) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .fusion-column-wrapper {
+        @media screen and (max-width: 1024px) {
+            justify-content: center !important;
+        }
+    }
+
+    .fusion-text {
+        p {
+            @media screen and (max-width: 767px) {
+                margin-bottom: 10px;
+                padding: 0 !important;
+            }
+
+            @media screen and (max-width: 1024px) {
+                text-align: center !important;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            column-rule: none;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.to-top-floating {
+    #toTop {
+        width: 60px !important;
+        height: 60px !important;
+        bottom: 50px !important;
+
+        &:before {
+            font-size: 55px;
+            line-height: 50px !important;
+        }
+    }
+}
+
+.logo--footer {
+    img {
+        width: 100%;
+    }
+}

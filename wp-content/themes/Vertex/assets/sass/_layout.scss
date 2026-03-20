@@ -1,0 +1,122 @@
+#boxed-wrapper {
+    #wrapper {
+        min-height: 100vh;
+    }
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -webkit-optimize-contrast !important;
+    transform: translateZ(0);
+}
+
+*img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.t-max-width-300 {
+    @media screen and (max-width: 767px) {
+        max-width: 300px !important;
+    }
+}
+
+.t-max-width-400 {
+    @media screen and (max-width: 767px) {
+        max-width: 400px !important;
+    }
+}
+
+.t-max-width-500 {
+    @media screen and (max-width: 767px) {
+        max-width: 500px !important;
+    }
+}
+
+.home {
+    #main {
+        margin-top: -80px;
+    }
+}
+
+.home-hero {
+    .img-backup {
+        left: -75%;
+        max-width: none;
+        width: 175%;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            left: -112%;
+            width: 220%;
+        }
+
+        @media screen and (max-width: 767px) {
+            left: auto;
+            width: 100%;
+        }
+    }
+
+    h1 {
+        @media screen and (max-width: 1000px) {
+            font-size: 38px !important;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 38px !important;
+        }
+    }
+
+    p {
+        @media screen and (max-width: 767px) {
+            font-size: 18px !important;
+        }
+    }
+}
+
+.logo-hero {
+    @media screen and (max-width: 1000px) {
+        width: 200px !important;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 150px !important;
+    }
+}
+
+.off-canvas-close {
+    font-size: 25px !important;
+    margin-right: -10px !important;
+    margin-top: -30px !important;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.awb-off-canvas {
+    .off-canvas-content {
+        > .fusion-fullwidth {
+            > .fusion-builder-row {
+                > .fusion-layout-column {
+                    margin-bottom: 0 !important;
+
+                    > .fusion-column-wrapper {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .fusion-builder-row {
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+.fusion-privacy-bar {
+    .fusion-privacy-bar-acceptance {
+        font-size: 12px !important;
+        margin-left: 0 !important;
+        padding: 5px 20px !important;
+    }
+}

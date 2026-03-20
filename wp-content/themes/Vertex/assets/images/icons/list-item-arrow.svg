@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.95 38.57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3568b2;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-family: AtkinsonHyperlegibleNext-Regular, 'AtkinsonHyperlegibleNext Regular';
+        font-size: 35px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-3" transform="translate(0 29.29)"><tspan x="0" y="0">• </tspan></text>
+      <g>
+        <path class="cls-1" d="M37.95,19.59C37.95,9.11,29.46.62,18.98.62S0,9.11,0,19.59s8.5,18.98,18.98,18.98,18.97-8.5,18.97-18.98h0Z"/>
+        <polygon class="cls-2" points="14.03 11.28 28.42 19.59 14.03 27.9 14.03 11.28 14.03 11.28"/>
+      </g>
+    </g>
+  </g>
+</svg>

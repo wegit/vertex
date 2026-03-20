@@ -1,0 +1,14 @@
+.contact-card {
+    p {
+        margin: 0 !important;
+    }
+    strong {
+        color: var(--wp--preset--color--awb-color-8);
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    a {
+        color: var(--wp--preset--color--awb-color-5);
+        margin: 0;
+    }
+}

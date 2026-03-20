@@ -1,0 +1,35 @@
+.avada-page-titlebar-wrapper {
+    margin-top: -80px;
+
+    .fusion-page-title-bar {
+        padding: 200px 0 125px !important;
+        position: relative;
+        overflow: hidden !important;
+
+        &:before {
+            background-image: url(/wp-content/themes/BiosGo/assets/images/backgrounds/purple-rings.svg);
+            content: "";
+            height: 150vw;
+            left: 0;
+            max-height: 5000px;
+            max-width: 5000px;
+            opacity: 0.5;
+            position: absolute;
+            top: 50%;
+            transform: translate(-40%, -50%);
+            width: 150vw;
+            @include background-image();
+
+            @media screen and (max-width: 767px) {
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 175vw;
+                height: 175vw;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            padding: 100px 0 25px !important;
+        }
+    }
+}
