@@ -1,3 +1,3 @@
-# BiosGo
+# Vertex
 
-Custom WordPress theme files for BiosGo.
+Custom WordPress theme files for Vertex.
