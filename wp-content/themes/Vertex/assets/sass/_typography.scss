@@ -27,19 +27,23 @@ body {
 
 .is-text-wrap-balance {
     text-wrap: balance;
-}
 
-.fusion-checklist {
-    .fusion-li-item {
-        margin-bottom: 15px;
-    }
-
-    .fusion-li-item-content {
-        color: var(--wp--preset--color--awb-color-5) !important;
-        font-size: 21px;
-        font-weight: 400;
+    > * {
+        text-wrap: balance !important;
     }
 }
+
+// .fusion-checklist {
+//     .fusion-li-item {
+//         margin-bottom: 15px;
+//     }
+
+//     .fusion-li-item-content {
+//         color: var(--wp--preset--color--awb-color-5) !important;
+//         font-size: 21px;
+//         font-weight: 400;
+//     }
+// }
 
 .is-color-green {
     color: var(--awb-color4);
