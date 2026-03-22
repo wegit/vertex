@@ -46,6 +46,9 @@
 }
 
 .fusion-form {
+    > .fusion-flex-container {
+        padding: 0 !important;
+    }
     .fusion-layout-column {
         margin-bottom: 0;
     }
