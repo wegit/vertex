@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2356.18 757.8">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 115px;
+      }
+
+      .cls-3 {
+        mix-blend-mode: soft-light;
+        opacity: .3;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="2356.18" height="757.8"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" width="2356.19" height="757.8"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="-9" y="-28" width="2374.19" height="786.8"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g class="cls-7">
+          <g class="cls-5">
+            <g class="cls-3">
+              <g class="cls-6">
+                <polyline class="cls-2" points="2356.19 363.62 888.59 363.62 755.52 136.04 587.35 612.2 461.37 364.54 0 364.54"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
