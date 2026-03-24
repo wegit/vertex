@@ -19,11 +19,13 @@
         border-bottom: 1px solid var(--awb-color1);
         cursor: pointer;
         margin: 0 !important;
+        font-weight: 700;
+        border-left: none;
     }
-}
 
-.tab-arrow {
-    //     clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 0 100%);
+    .tab-trigger-active p {
+        color: var(--wp--preset--color--awb-color-7) !important;
+    }
 }
 
 [class*="tab-panel-"] {
@@ -34,33 +36,40 @@
     display: block;
 }
 
-.tab-images .fusion-image-element {
-    display: none;
-}
-
-.tab-images .fusion-image-element:first-child {
-    display: block;
-}
-
-.tab-images .fusion-image-element:first-child img {
-    display: block;
-}
-
-.tab-images .fusion-image-element {
-    width: 100%;
-    height: 100%;
+.tab-images {
     position: relative;
-}
 
-.tab-images .fusion-image-element span {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
+    .fusion-image-element {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
 
-.tab-images .fusion-image-element span img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+        &:first-child {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        span {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        span img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 843px) {
+        min-height: 65vw;
+    }
 }

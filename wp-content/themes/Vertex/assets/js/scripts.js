@@ -5,7 +5,22 @@ var $body = $("body");
 
 $documment.ready(function () {
     jQuery(document).ready(function ($) {
-        var count = 5;
+        var count = $(".tab-triggers [id^='tab-trigger-']").length;
+        var duration = 400;
+
+        // Preload all tab images
+        for (var p = 2; p <= count; p++) {
+            var src = $(".tab-image-" + p)
+                .closest(".fusion-image-element")
+                .find("img")
+                .attr("src");
+            if (src) {
+                new Image().src = src;
+            }
+        }
+
+        // Set first trigger as active on load
+        $("#tab-trigger-1").addClass("tab-trigger-active");
 
         for (var i = 1; i <= count; i++) {
             (function (idx) {
@@ -16,13 +31,13 @@ $documment.ready(function () {
                         var $trigger = $("#tab-trigger-" + j);
 
                         if (j === idx) {
-                            $panel.stop(true).fadeIn(400);
-                            $img.stop(true).fadeIn(400);
-                            $trigger.css({ fontWeight: "800", borderLeft: "4px solid #5b2d8e" });
+                            $panel.show();
+                            $img.stop(true).css("pointer-events", "auto").animate({ opacity: 1 }, duration);
+                            $trigger.addClass("tab-trigger-active");
                         } else {
-                            $panel.stop(true).fadeOut(200);
-                            $img.stop(true).fadeOut(200);
-                            $trigger.css({ fontWeight: "700", borderLeft: "none" });
+                            $panel.hide();
+                            $img.stop(true).css("pointer-events", "none").animate({ opacity: 0 }, duration);
+                            $trigger.removeClass("tab-trigger-active");
                         }
                     }
                 });
