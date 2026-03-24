@@ -21,6 +21,21 @@
         margin: 0 !important;
         font-weight: 700;
         border-left: none;
+        outline: none;
+        text-wrap: balance;
+
+        @media screen and (max-width: 843px) {
+            text-align: center;
+        }
+    }
+
+    .tab-trigger {
+        outline: none;
+
+        &:focus-visible p {
+            outline: 2px solid #5b2d8e;
+            outline-offset: 2px;
+        }
     }
 
     .tab-trigger-active p {
@@ -30,6 +45,22 @@
 
 [class*="tab-panel-"] {
     display: none;
+
+    strong {
+        line-height: 1.35;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .tab-panel-1 {
@@ -72,4 +103,40 @@
     @media screen and (max-width: 843px) {
         min-height: 65vw;
     }
+}
+
+.tab-arrow {
+    .fusion-column-wrapper {
+        position: relative;
+        overflow: visible !important;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -49.5px;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            background: var(--wp--preset--color--awb-color-7);
+            clip-path: polygon(0 0, 0 100%, 100% 50%);
+            z-index: 10;
+
+            @media screen and (max-width: 843px) {
+                right: auto;
+                top: auto;
+                bottom: -40px;
+                left: 0;
+                width: 100%;
+                height: 41px;
+                clip-path: polygon(0 0, 100% 0, 50% 100%);
+            }
+        }
+    }
+}
+
+.awb-imageframe-caption-text {
+    margin: 0 !important;
+    padding: 10px 0;
+    font-style: italic !important;
+    color: var(--wp--preset--color--awb-color-5) !important;
 }

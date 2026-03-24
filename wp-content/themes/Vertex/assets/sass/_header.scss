@@ -158,6 +158,13 @@
             letter-spacing: normal;
             transition: all 0.2s ease;
             color: var(--awb-color5) !important;
+            line-height: 1.2;
+
+            @media screen and (max-width: 524px) {
+                padding: 10px 8px !important;
+                font-size: 16px;
+                line-height: 1;
+            }
         }
     }
 

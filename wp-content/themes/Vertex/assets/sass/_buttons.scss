@@ -1,6 +1,10 @@
 .fusion-button {
     font-weight: 600 !important;
 
+    .awb-button__text--default {
+        text-align: center;
+    }
+
     > * {
         font-weight: inherit;
     }
