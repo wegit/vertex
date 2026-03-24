@@ -72,7 +72,9 @@
             font-size: 18px;
         }
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
             border: 2px solid var(--awb-color4) !important;
 
             span {
