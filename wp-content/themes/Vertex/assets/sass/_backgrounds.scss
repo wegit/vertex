@@ -4,6 +4,7 @@
 .has-ekg-white-top-rev {
     position: relative;
     z-index: 1;
+    // overflow: hidden !important;
 }
 
 .has-ekg-purple-bottom::after,
@@ -25,8 +26,9 @@
     background-image: url(/wp-content/themes/Vertex/assets/images/backgrounds/ekg-purple.svg);
     bottom: 0;
     height: 45vw;
+    background-position: center center;
     opacity: 0.5;
-    transform: translateY(44.75%);
+    transform: translateY(46%);
 }
 
 /* White top */
@@ -45,12 +47,38 @@
     transform: rotate(180deg) translateY(25%);
 }
 
+// @media screen and (max-width: 1665px) {
+//     .has-ekg-purple-bottom::after {
+//         transform: translateY(46%);
+//     }
+// }
+
+@media screen and (max-width: 1010px) {
+    .has-ekg-purple-bottom::after {
+        transform: translateY(45.75%);
+    }
+}
+
+// @media screen and (max-width: 740px) {
+//     .has-ekg-purple-bottom::after {
+//         transform: translateY(45.75%);
+//     }
+// }
+
+@media screen and (max-width: 530px) {
+    .has-ekg-purple-bottom::after {
+        transform: translateY(45.65%);
+    }
+}
+
+// @media screen and (max-width: 450px) {
+//     .has-ekg-purple-bottom::after {
+//         transform: translateY(45.5%);
+//     }
+// }
+
 /* Responsive tweaks */
 @media screen and (max-width: 989px) {
-    .has-ekg-purple-bottom::after {
-        transform: translateY(44.75%);
-    }
-
     .has-ekg-white-top-rev::after {
         transform: rotate(180deg) translateY(50%);
     }
