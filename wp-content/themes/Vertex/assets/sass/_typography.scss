@@ -52,4 +52,15 @@ ul {
     li {
         margin-bottom: 10px;
     }
+
+    &.featured-list {
+        li {
+            .fusion-li-item-content {
+                padding-top: 4px;
+            }
+            p {
+                line-height: 1.25;
+            }
+        }
+    }
 }
